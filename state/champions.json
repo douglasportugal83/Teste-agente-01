@@ -1,0 +1,62 @@
+{
+ "generated_at_utc": "2026-11-23T21:54:24+00:00",
+ "routing": {
+  "alta": {
+   "BTCUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "ETHUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "SOLUSDT": {
+    "champion": null,
+    "challengers": []
+   }
+  },
+  "lateral": {
+   "BTCUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "ETHUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "SOLUSDT": {
+    "champion": null,
+    "challengers": []
+   }
+  },
+  "baixa": {
+   "BTCUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "ETHUSDT": {
+    "champion": null,
+    "challengers": []
+   },
+   "SOLUSDT": {
+    "champion": null,
+    "challengers": []
+   }
+  }
+ },
+ "board": {
+  "alta": {
+   "champion": null,
+   "challengers": []
+  },
+  "lateral": {
+   "champion": null,
+   "challengers": []
+  },
+  "baixa": {
+   "champion": null,
+   "challengers": []
+  }
+ },
+ "approved": "ado\u00e7\u00e3o inicial autom\u00e1tica (paper)"
+}

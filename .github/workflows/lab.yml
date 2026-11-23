@@ -1,0 +1,92 @@
+name: Laboratório de trading (paper)
+
+# Horários em UTC. Brasília = UTC-3:
+#   Scout 21:00 · Judge 23:00 · Engineer 03:00 · Resumo 07:30 · Semanal domingo 10:00 · Sentinel de hora em hora
+on:
+  schedule:
+    - cron: "0 0 * * *"    # Scout
+    - cron: "0 2 * * *"    # Judge
+    - cron: "0 6 * * *"    # Engineer
+    - cron: "30 10 * * *"  # Resumo da manhã
+    - cron: "0 13 * * 0"   # Semanal (domingo)
+    - cron: "7 * * * *"    # Sentinel + paper trading
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "scout | judge | engineer | sentinel | brief | weekly | approve | resume"
+        required: true
+        default: sentinel
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: lab-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Escolher tarefa
+        id: pick
+        run: |
+          case "${{ github.event.schedule }}" in
+            "0 0 * * *")   cmd=scout ;;
+            "0 2 * * *")   cmd=judge ;;
+            "0 6 * * *")   cmd=engineer ;;
+            "30 10 * * *") cmd=brief ;;
+            "0 13 * * 0")  cmd=weekly ;;
+            "7 * * * *")   cmd=sentinel ;;
+            *)             cmd="${{ github.event.inputs.command }}" ;;
+          esac
+          echo "cmd=$cmd" >> "$GITHUB_OUTPUT"
+
+      - name: Rodar
+        run: |
+          set -o pipefail
+          if [ "${{ steps.pick.outputs.cmd }}" = "judge" ]; then python -m lab data; fi
+          python -m lab "${{ steps.pick.outputs.cmd }}" | tee out.md
+          # o Sentinel também roda depois das tarefas noturnas para não perder candles
+          if [ "${{ steps.pick.outputs.cmd }}" != "sentinel" ]; then python -m lab sentinel > /dev/null; fi
+          python -m lab alerts > alerts.md
+
+      - name: Alerta do Sentinel
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s alerts.md ]; then
+            { echo "@${{ github.repository_owner }} o Sentinel parou o bot (paper)."; echo; cat alerts.md; echo;
+              echo 'Para retomar depois de revisar: Actions → "Laboratório de trading" → Run workflow → `resume`.'; } > body.md
+            gh issue create --title "🛑 Sentinel: bot parado" --body-file body.md
+          fi
+
+      - name: Resumo da manhã / semanal
+        if: steps.pick.outputs.cmd == 'brief' || steps.pick.outputs.cmd == 'weekly'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo "@${{ github.repository_owner }}"; echo; cat out.md; } > body.md
+          title=$([ "${{ steps.pick.outputs.cmd }}" = brief ] && echo "Resumo da manhã" || echo "Relatório semanal")
+          gh issue create --title "$title $(TZ=America/Sao_Paulo date +%F)" --body-file body.md
+
+      - name: Salvar estado
+        if: always()
+        run: |
+          git config user.name "trading-lab-bot"
+          git config user.email "trading-lab-bot@users.noreply.github.com"
+          git add data state reports
+          git diff --cached --quiet && exit 0
+          git commit -m "lab: ${{ steps.pick.outputs.cmd }} $(date -u +%FT%H:%MZ)"
+          for i in 1 2 3 4; do git pull --rebase && git push && exit 0; sleep $((i*5)); done
+          exit 1
