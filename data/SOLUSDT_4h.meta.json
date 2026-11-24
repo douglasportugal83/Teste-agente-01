@@ -2,8 +2,8 @@
   "symbol": "SOLUSDT",
   "interval": "4h",
   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
-  "fetched_at_utc": "2026-11-24T05:57:38+00:00",
-  "first_bar_utc": "2022-11-24T08:00+00:00",
-  "last_bar_utc": "2026-11-24T00:00+00:00",
+  "fetched_at_utc": "2026-11-24T09:31:21+00:00",
+  "first_bar_utc": "2022-11-24T12:00+00:00",
+  "last_bar_utc": "2026-11-24T04:00+00:00",
   "bars": 8765
 }
