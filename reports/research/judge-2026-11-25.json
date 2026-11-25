@@ -1,0 +1,1277 @@
+{
+ "generated_at_utc": "2026-11-25T10:49:11+00:00",
+ "settings": {
+  "is_permutations": 1000,
+  "wf_permutations": 200,
+  "costs_per_side": 0.0015,
+  "interval": "4h"
+ },
+ "results": [
+  {
+   "family": "donchian_breakout",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 1.5777722923894957,
+     "max_dd": 0.11636411713344386,
+     "trades": 36,
+     "win_rate": 0.5277777777777778,
+     "profit_factor": 3.3484060202922183,
+     "longest_losing_streak": 3,
+     "worst_month": [
+      "2024-04",
+      -0.04547012079288071
+     ],
+     "avg_trade": 0.029942829969335796,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 2.995980205529402,
+     "hurdle": 2.995980205529402,
+     "robust_share": 1.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 40,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "donchian_breakout",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": true,
+     "net_return": 1.8546113334053382,
+     "max_dd": 0.22718738307864006,
+     "trades": 30,
+     "win_rate": 0.5,
+     "profit_factor": 3.0630221414637693,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2023-03",
+      -0.09835411545479167
+     ],
+     "avg_trade": 0.04120913858186833,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": 1.5052855698005358,
+     "hurdle": 1.5052855698005358,
+     "robust_share": 1.0
+    },
+    "2_is_permutation": {
+     "p_value": 0.011652542372881356,
+     "permutations": 943,
+     "beaten_by": 10,
+     "pass": false,
+     "early_stop": true
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 60,
+    "stop": 3.0
+   },
+   "killed_at": "2_is_permutation"
+  },
+  {
+   "family": "donchian_breakout",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 3.386483540530114,
+     "max_dd": 0.30525731285913094,
+     "trades": 33,
+     "win_rate": 0.5454545454545454,
+     "profit_factor": 3.207086003968431,
+     "longest_losing_streak": 3,
+     "worst_month": [
+      "2023-04",
+      -0.0818393786546251
+     ],
+     "avg_trade": 0.057927930883465685,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 6.007159803191195,
+     "hurdle": 6.007159803191195,
+     "robust_share": 1.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 60,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "ema_pullback",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 0.7689611914060253,
+     "max_dd": 0.20980965636561288,
+     "trades": 83,
+     "win_rate": 0.40963855421686746,
+     "profit_factor": 1.7188778249967176,
+     "longest_losing_streak": 8,
+     "worst_month": [
+      "2023-02",
+      -0.11846851301500061
+     ],
+     "avg_trade": 0.008638171996490996,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 2.995980205529402,
+     "hurdle": 2.995980205529402,
+     "robust_share": 1.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 10,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "ema_pullback",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 0.07887661897614473,
+     "max_dd": 0.2853617516497672,
+     "trades": 60,
+     "win_rate": 0.35,
+     "profit_factor": 1.1692999978859209,
+     "longest_losing_streak": 9,
+     "worst_month": [
+      "2025-08",
+      -0.11287983524861933
+     ],
+     "avg_trade": 0.0024380528499019327,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": 1.5052855698005358,
+     "hurdle": 1.5052855698005358,
+     "robust_share": 0.3333333333333333
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 20,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "ema_pullback",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 1.6158949531441493,
+     "max_dd": 0.4952450075639241,
+     "trades": 72,
+     "win_rate": 0.4305555555555556,
+     "profit_factor": 1.879156017678304,
+     "longest_losing_streak": 7,
+     "worst_month": [
+      "2024-01",
+      -0.15526164009979804
+     ],
+     "avg_trade": 0.018772188737296677,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 6.007159803191195,
+     "hurdle": 6.007159803191195,
+     "robust_share": 1.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 20,
+    "stop": 2.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 0.0410998066135313,
+     "max_dd": 0.28417645529353397,
+     "trades": 173,
+     "win_rate": 0.5838150289017341,
+     "profit_factor": 1.0641446319852568,
+     "longest_losing_streak": 6,
+     "worst_month": [
+      "2023-04",
+      -0.07598253603712979
+     ],
+     "avg_trade": 0.0005186323661463357,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 2.995980205529402,
+     "hurdle": 2.995980205529402,
+     "robust_share": 0.16666666666666666
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 30,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.03291184892280774,
+     "max_dd": 0.34914627823752464,
+     "trades": 152,
+     "win_rate": 0.5592105263157895,
+     "profit_factor": 1.0211149555691763,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2024-10",
+      -0.11769883337630072
+     ],
+     "avg_trade": 0.0002281663732472555,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": 1.5052855698005358,
+     "hurdle": 1.5052855698005358,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 30,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": 0.33200721770738695,
+     "max_dd": 0.15285033786378832,
+     "trades": 37,
+     "win_rate": 0.5405405405405406,
+     "profit_factor": 1.8319736895882446,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2023-04",
+      -0.0468058639579767
+     ],
+     "avg_trade": 0.008505812802463214,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 6.007159803191195,
+     "hurdle": 6.007159803191195,
+     "robust_share": 0.5
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 10,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "BTCUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.45749418799016484,
+     "max_dd": 0.45993360396324234,
+     "trades": 91,
+     "win_rate": 0.4065934065934066,
+     "profit_factor": 0.46645228920919185,
+     "longest_losing_streak": 9,
+     "worst_month": [
+      "2024-01",
+      -0.11619211008650998
+     ],
+     "avg_trade": -0.006509793329292603,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 0.08146774106910604,
+     "hurdle": 0.08146774106910604,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 2.5,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "ETHUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.39392877723509045,
+     "max_dd": 0.4440543036301119,
+     "trades": 205,
+     "win_rate": 0.551219512195122,
+     "profit_factor": 0.8268246342084855,
+     "longest_losing_streak": 5,
+     "worst_month": [
+      "2025-06",
+      -0.07998054530669607
+     ],
+     "avg_trade": -0.0020726461081470556,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": 0.18992712806836587,
+     "hurdle": 0.18992712806836587,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 1.5,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "SOLUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.44962712452348463,
+     "max_dd": 0.5691581280429872,
+     "trades": 56,
+     "win_rate": 0.3392857142857143,
+     "profit_factor": 0.5273535887129903,
+     "longest_losing_streak": 14,
+     "worst_month": [
+      "2025-02",
+      -0.12336556140314092
+     ],
+     "avg_trade": -0.009991912453093697,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 0.2268637719129893,
+     "hurdle": 0.2268637719129893,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 2.5,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_range",
+   "market": "BTCUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.035034755301114884,
+     "max_dd": 0.08541879686517162,
+     "trades": 18,
+     "win_rate": 0.3333333333333333,
+     "profit_factor": 0.7812557005539325,
+     "longest_losing_streak": 5,
+     "worst_month": [
+      "2024-02",
+      -0.055568469020766176
+     ],
+     "avg_trade": -0.001888340321972745,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 0.08146774106910604,
+     "hurdle": 0.08146774106910604,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 25,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_range",
+   "market": "ETHUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.07999244589318288,
+     "max_dd": 0.117307770607605,
+     "trades": 17,
+     "win_rate": 0.4117647058823529,
+     "profit_factor": 0.45899299094390467,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2025-05",
+      -0.06225790266179054
+     ],
+     "avg_trade": -0.004729103925049314,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": 0.18992712806836587,
+     "hurdle": 0.18992712806836587,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 25,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "rsi_range",
+   "market": "SOLUSDT",
+   "regime": "lateral",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.16702185846896056,
+     "max_dd": 0.18764071507409064,
+     "trades": 14,
+     "win_rate": 0.21428571428571427,
+     "profit_factor": 0.2015098638103699,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2024-08",
+      -0.06728191429517949
+     ],
+     "avg_trade": -0.012609053429979974,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 0.2268637719129893,
+     "hurdle": 0.2268637719129893,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 25,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "BTCUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.19355885845879894,
+     "max_dd": 0.3837805958045163,
+     "trades": 30,
+     "win_rate": 0.3333333333333333,
+     "profit_factor": 0.7202778007705455,
+     "longest_losing_streak": 8,
+     "worst_month": [
+      "2024-04",
+      -0.07857810068920668
+     ],
+     "avg_trade": -0.004922602720515156,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 0.09119336589520195,
+     "hurdle": 0.09119336589520195,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 20,
+    "stop": 2.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "ETHUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.44215246381634676,
+     "max_dd": 0.5297474884497038,
+     "trades": 32,
+     "win_rate": 0.34375,
+     "profit_factor": 0.5864661549839484,
+     "longest_losing_streak": 5,
+     "worst_month": [
+      "2025-03",
+      -0.20001004151236368
+     ],
+     "avg_trade": -0.012339922881245169,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": -0.24627196789243402,
+     "hurdle": 0.0,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 20,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "SOLUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.7000061819166998,
+     "max_dd": 0.7374442385046545,
+     "trades": 39,
+     "win_rate": 0.20512820512820512,
+     "profit_factor": 0.3488976904238142,
+     "longest_losing_streak": 11,
+     "worst_month": [
+      "2025-04",
+      -0.18716384929209107
+     ],
+     "avg_trade": -0.023236825534789396,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 0.10383735807782407,
+     "hurdle": 0.10383735807782407,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 20,
+    "stop": 2.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "BTCUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "BTCUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": false,
+     "net_return": -0.06671682063291162,
+     "max_dd": 0.13859004079153792,
+     "trades": 68,
+     "win_rate": 0.4852941176470588,
+     "profit_factor": 0.9296232278575693,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2023-03",
+      -0.12624202698710263
+     ],
+     "avg_trade": -0.0006497579534663553,
+     "buy_hold_full": 4.211417074441808,
+     "buy_hold_in_regime": 0.09119336589520195,
+     "hurdle": 0.09119336589520195,
+     "robust_share": 0.0
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 80,
+    "stop": 3.0
+   },
+   "killed_at": "1_in_sample"
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "ETHUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "ETHUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:00+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": true,
+     "net_return": 0.04955928327844861,
+     "max_dd": 0.27586922503182754,
+     "trades": 85,
+     "win_rate": 0.5529411764705883,
+     "profit_factor": 1.0930332085709067,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2023-03",
+      -0.07804340096831897
+     ],
+     "avg_trade": 0.0009729670439726704,
+     "buy_hold_full": 1.3364054205858853,
+     "buy_hold_in_regime": -0.24627196789243402,
+     "hurdle": 0.0,
+     "robust_share": 0.3333333333333333
+    },
+    "2_is_permutation": {
+     "p_value": 0.16923076923076924,
+     "permutations": 64,
+     "beaten_by": 10,
+     "pass": false,
+     "early_stop": true
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 80,
+    "stop": 3.0
+   },
+   "killed_at": "2_is_permutation"
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "SOLUSDT",
+   "regime": "baixa",
+   "data": {
+    "symbol": "SOLUSDT",
+    "interval": "4h",
+    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
+    "fetched_at_utc": "2026-11-25T10:49:01+00:00",
+    "first_bar_utc": "2022-11-25T12:00+00:00",
+    "last_bar_utc": "2026-11-25T04:00+00:00",
+    "bars": 8765
+   },
+   "split": {
+    "dev": [
+     "2023-01-07 20:00",
+     "2025-11-24 20:00"
+    ],
+    "holdout": [
+     "2025-11-25 00:00",
+     "2026-11-25 04:00"
+    ]
+   },
+   "gates": {
+    "1_in_sample": {
+     "pass": true,
+     "net_return": 0.5465279561514449,
+     "max_dd": 0.24671667387257745,
+     "trades": 91,
+     "win_rate": 0.5494505494505495,
+     "profit_factor": 1.4919303276179803,
+     "longest_losing_streak": 4,
+     "worst_month": [
+      "2024-05",
+      -0.13491879174139632
+     ],
+     "avg_trade": 0.006085412258618772,
+     "buy_hold_full": 9.56793893129771,
+     "buy_hold_in_regime": 0.10383735807782407,
+     "hurdle": 0.10383735807782407,
+     "robust_share": 1.0
+    },
+    "2_is_permutation": {
+     "p_value": 0.00999000999000999,
+     "permutations": 1000,
+     "beaten_by": 9,
+     "pass": true,
+     "early_stop": false
+    },
+    "3_walk_forward": {
+     "pass": true,
+     "net_return": 0.17934857899272072,
+     "max_dd": 0.27164434037569296,
+     "trades": 48,
+     "win_rate": 0.625,
+     "profit_factor": 1.2827388113620672,
+     "longest_losing_streak": 3,
+     "worst_month": [
+      "2024-05",
+      -0.22072802722219376
+     ],
+     "avg_trade": 0.00454107261075173,
+     "buy_hold_full": 0.5478533094812166,
+     "buy_hold_in_regime": -0.1470294738432705,
+     "hurdle": 0.0,
+     "folds": [
+      {
+       "test": [
+        "2024-01-07 20:00",
+        "2024-04-06 16:00"
+       ],
+       "params": {
+        "p": 90,
+        "stop": 3.0
+       },
+       "ret": 0.0
+      },
+      {
+       "test": [
+        "2024-04-06 20:00",
+        "2024-07-05 16:00"
+       ],
+       "params": {
+        "p": 70,
+        "stop": 3.0
+       },
+       "ret": 0.014215272758253234
+      },
+      {
+       "test": [
+        "2024-07-05 20:00",
+        "2024-10-03 16:00"
+       ],
+       "params": {
+        "p": 90,
+        "stop": 2.0
+       },
+       "ret": 0.04086892812475008
+      },
+      {
+       "test": [
+        "2024-10-03 20:00",
+        "2025-01-01 16:00"
+       ],
+       "params": {
+        "p": 90,
+        "stop": 2.0
+       },
+       "ret": -0.015735385689902383
+      },
+      {
+       "test": [
+        "2025-01-01 20:00",
+        "2025-04-01 16:00"
+       ],
+       "params": {
+        "p": 90,
+        "stop": 2.0
+       },
+       "ret": 0.0949149656332638
+      },
+      {
+       "test": [
+        "2025-04-01 20:00",
+        "2025-06-30 16:00"
+       ],
+       "params": {
+        "p": 90,
+        "stop": 2.0
+       },
+       "ret": 0.018731769438412937
+      },
+      {
+       "test": [
+        "2025-06-30 20:00",
+        "2025-09-28 16:00"
+       ],
+       "params": {
+        "p": 80,
+        "stop": 3.0
+       },
+       "ret": 0.012065491234774633
+      },
+      {
+       "test": [
+        "2025-09-28 20:00",
+        "2025-11-24 20:00"
+       ],
+       "params": {
+        "p": 80,
+        "stop": 3.0
+       },
+       "ret": 0.005437935204440331
+      }
+     ]
+    },
+    "4_wf_permutation": {
+     "p_value": 0.03980099502487562,
+     "permutations": 200,
+     "beaten_by": 7,
+     "pass": true,
+     "early_stop": false
+    }
+   },
+   "status": "morta",
+   "params_is": {
+    "p": 80,
+    "stop": 3.0
+   },
+   "final_check": {
+    "checks": {
+     "ganha_em_dados_nunca_vistos": false,
+     "bate_segurar_apos_custos": false,
+     "robusto_entre_parametros": true,
+     "mercado_embaralhado_nao_bateu": true,
+     "sem_vazamento_do_futuro": true
+    },
+    "holdout": {
+     "net_return": -0.17064271510014084,
+     "max_dd": 0.2767246045926429,
+     "trades": 41,
+     "win_rate": 0.4878048780487805,
+     "profit_factor": 0.7283125962638556,
+     "longest_losing_streak": 6,
+     "worst_month": [
+      "2026-02",
+      -0.1628895671592444
+     ],
+     "avg_trade": -0.0038928968179728026,
+     "buy_hold_full": -0.5079100145137881,
+     "buy_hold_in_regime": -0.46895735097150854,
+     "hurdle": 0.0
+    }
+   },
+   "killed_at": "final_check"
+  }
+ ],
+ "board": {
+  "alta": {
+   "champion": null,
+   "challengers": [],
+   "routing": {
+    "BTCUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "ETHUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "SOLUSDT": {
+     "champion": null,
+     "challengers": []
+    }
+   }
+  },
+  "lateral": {
+   "champion": null,
+   "challengers": [],
+   "routing": {
+    "BTCUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "ETHUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "SOLUSDT": {
+     "champion": null,
+     "challengers": []
+    }
+   }
+  },
+  "baixa": {
+   "champion": null,
+   "challengers": [],
+   "routing": {
+    "BTCUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "ETHUSDT": {
+     "champion": null,
+     "challengers": []
+    },
+    "SOLUSDT": {
+     "champion": null,
+     "challengers": []
+    }
+   }
+  }
+ }
+}
