@@ -1,0 +1,181 @@
+{
+ "generated_at_utc": "2026-11-25T08:02:16+00:00",
+ "markets": {
+  "BTCUSDT": {
+   "regime": "baixa",
+   "last_bar_utc": "2026-11-25T04:00+00:00",
+   "close": 58738.33,
+   "ema200": 70060.35,
+   "ema200_rising": false,
+   "adx": 24.2,
+   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
+  },
+  "ETHUSDT": {
+   "regime": "baixa",
+   "last_bar_utc": "2026-11-25T04:00+00:00",
+   "close": 1640.95,
+   "ema200": 2017.63,
+   "ema200_rising": false,
+   "adx": 19.7,
+   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
+  },
+  "SOLUSDT": {
+   "regime": "baixa",
+   "last_bar_utc": "2026-11-25T04:00+00:00",
+   "close": 67.81,
+   "ema200": 83.79,
+   "ema200_rising": false,
+   "adx": 19.7,
+   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
+  }
+ },
+ "ideas": [
+  {
+   "family": "donchian_breakout",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "idea": "Comprar rompimento da m\u00e1xima de N barras em mercado de alta.",
+   "why": "Momentum de s\u00e9rie temporal: o capital lento chega atrasado \u00e0 tend\u00eancia; paga quem vende cedo e quem entra tarde."
+  },
+  {
+   "family": "donchian_breakout",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "idea": "Comprar rompimento da m\u00e1xima de N barras em mercado de alta.",
+   "why": "Momentum de s\u00e9rie temporal: o capital lento chega atrasado \u00e0 tend\u00eancia; paga quem vende cedo e quem entra tarde."
+  },
+  {
+   "family": "donchian_breakout",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "idea": "Comprar rompimento da m\u00e1xima de N barras em mercado de alta.",
+   "why": "Momentum de s\u00e9rie temporal: o capital lento chega atrasado \u00e0 tend\u00eancia; paga quem vende cedo e quem entra tarde."
+  },
+  {
+   "family": "ema_pullback",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "idea": "Comprar a retomada da EMA curta depois de um recuo dentro da alta.",
+   "why": "Recuos em tend\u00eancia s\u00e3o liquida\u00e7\u00e3o tempor\u00e1ria; paga quem vende no p\u00e2nico de curto prazo."
+  },
+  {
+   "family": "ema_pullback",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "idea": "Comprar a retomada da EMA curta depois de um recuo dentro da alta.",
+   "why": "Recuos em tend\u00eancia s\u00e3o liquida\u00e7\u00e3o tempor\u00e1ria; paga quem vende no p\u00e2nico de curto prazo."
+  },
+  {
+   "family": "ema_pullback",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "idea": "Comprar a retomada da EMA curta depois de um recuo dentro da alta.",
+   "why": "Recuos em tend\u00eancia s\u00e3o liquida\u00e7\u00e3o tempor\u00e1ria; paga quem vende no p\u00e2nico de curto prazo."
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "BTCUSDT",
+   "regime": "alta",
+   "idea": "Comprar exageros de queda de curt\u00edssimo prazo (RSI 3) dentro da alta.",
+   "why": "Sobre-rea\u00e7\u00e3o de curto prazo: vendedores for\u00e7ados (liquida\u00e7\u00f5es) entregam pre\u00e7o abaixo do justo."
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "ETHUSDT",
+   "regime": "alta",
+   "idea": "Comprar exageros de queda de curt\u00edssimo prazo (RSI 3) dentro da alta.",
+   "why": "Sobre-rea\u00e7\u00e3o de curto prazo: vendedores for\u00e7ados (liquida\u00e7\u00f5es) entregam pre\u00e7o abaixo do justo."
+  },
+  {
+   "family": "rsi_dip_bull",
+   "market": "SOLUSDT",
+   "regime": "alta",
+   "idea": "Comprar exageros de queda de curt\u00edssimo prazo (RSI 3) dentro da alta.",
+   "why": "Sobre-rea\u00e7\u00e3o de curto prazo: vendedores for\u00e7ados (liquida\u00e7\u00f5es) entregam pre\u00e7o abaixo do justo."
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "BTCUSDT",
+   "regime": "lateral",
+   "idea": "Comprar na banda inferior e vender na superior em mercado lateral, sair na m\u00e9dia.",
+   "why": "Em faixas, provedores de liquidez ganham com quem persegue movimentos que n\u00e3o continuam."
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "ETHUSDT",
+   "regime": "lateral",
+   "idea": "Comprar na banda inferior e vender na superior em mercado lateral, sair na m\u00e9dia.",
+   "why": "Em faixas, provedores de liquidez ganham com quem persegue movimentos que n\u00e3o continuam."
+  },
+  {
+   "family": "bollinger_revert",
+   "market": "SOLUSDT",
+   "regime": "lateral",
+   "idea": "Comprar na banda inferior e vender na superior em mercado lateral, sair na m\u00e9dia.",
+   "why": "Em faixas, provedores de liquidez ganham com quem persegue movimentos que n\u00e3o continuam."
+  },
+  {
+   "family": "rsi_range",
+   "market": "BTCUSDT",
+   "regime": "lateral",
+   "idea": "Operar extremos do RSI(14) de volta para 50 em mercado lateral.",
+   "why": "Excesso de curto prazo em faixas tende a reverter; paga quem opera rompimentos que falham."
+  },
+  {
+   "family": "rsi_range",
+   "market": "ETHUSDT",
+   "regime": "lateral",
+   "idea": "Operar extremos do RSI(14) de volta para 50 em mercado lateral.",
+   "why": "Excesso de curto prazo em faixas tende a reverter; paga quem opera rompimentos que falham."
+  },
+  {
+   "family": "rsi_range",
+   "market": "SOLUSDT",
+   "regime": "lateral",
+   "idea": "Operar extremos do RSI(14) de volta para 50 em mercado lateral.",
+   "why": "Excesso de curto prazo em faixas tende a reverter; paga quem opera rompimentos que falham."
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "BTCUSDT",
+   "regime": "baixa",
+   "idea": "Vender a descoberto o rompimento da m\u00ednima de N barras em mercado de baixa.",
+   "why": "Quedas aceleram por liquida\u00e7\u00f5es e stops em cascata; paga quem compra cedo demais."
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "ETHUSDT",
+   "regime": "baixa",
+   "idea": "Vender a descoberto o rompimento da m\u00ednima de N barras em mercado de baixa.",
+   "why": "Quedas aceleram por liquida\u00e7\u00f5es e stops em cascata; paga quem compra cedo demais."
+  },
+  {
+   "family": "donchian_breakdown",
+   "market": "SOLUSDT",
+   "regime": "baixa",
+   "idea": "Vender a descoberto o rompimento da m\u00ednima de N barras em mercado de baixa.",
+   "why": "Quedas aceleram por liquida\u00e7\u00f5es e stops em cascata; paga quem compra cedo demais."
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "BTCUSDT",
+   "regime": "baixa",
+   "idea": "Vender repiques exagerados (RSI 3 alto) dentro da baixa.",
+   "why": "Repiques em baixa costumam ser cobertura de vendidos, n\u00e3o compra nova; paga quem persegue o repique."
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "ETHUSDT",
+   "regime": "baixa",
+   "idea": "Vender repiques exagerados (RSI 3 alto) dentro da baixa.",
+   "why": "Repiques em baixa costumam ser cobertura de vendidos, n\u00e3o compra nova; paga quem persegue o repique."
+  },
+  {
+   "family": "bear_rally_fade",
+   "market": "SOLUSDT",
+   "regime": "baixa",
+   "idea": "Vender repiques exagerados (RSI 3 alto) dentro da baixa.",
+   "why": "Repiques em baixa costumam ser cobertura de vendidos, n\u00e3o compra nova; paga quem persegue o repique."
+  }
+ ]
+}
