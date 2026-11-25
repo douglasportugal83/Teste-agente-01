@@ -2,7 +2,7 @@
   "symbol": "BTCUSDT",
   "interval": "4h",
   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
-  "fetched_at_utc": "2026-11-25T20:02:53+00:00",
+  "fetched_at_utc": "2026-11-25T22:27:58+00:00",
   "first_bar_utc": "2022-11-26T00:00+00:00",
   "last_bar_utc": "2026-11-25T16:00+00:00",
   "bars": 8765
