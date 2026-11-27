@@ -1,31 +1,31 @@
 {
- "generated_at_utc": "2026-11-27T07:54:45+00:00",
+ "generated_at_utc": "2026-11-27T10:28:30+00:00",
  "markets": {
   "BTCUSDT": {
    "regime": "lateral",
-   "last_bar_utc": "2026-11-27T00:00+00:00",
-   "close": 61411.0,
-   "ema200": 69040.02,
+   "last_bar_utc": "2026-11-27T04:00+00:00",
+   "close": 61673.45,
+   "ema200": 68966.72,
    "ema200_rising": false,
-   "adx": 15.8,
+   "adx": 15.5,
    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
   },
   "ETHUSDT": {
    "regime": "lateral",
-   "last_bar_utc": "2026-11-27T00:00+00:00",
-   "close": 1728.64,
-   "ema200": 1983.36,
+   "last_bar_utc": "2026-11-27T04:00+00:00",
+   "close": 1735.44,
+   "ema200": 1980.89,
    "ema200_rising": false,
-   "adx": 13.0,
+   "adx": 13.2,
    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
   },
   "SOLUSDT": {
    "regime": "lateral",
-   "last_bar_utc": "2026-11-27T00:00+00:00",
-   "close": 72.75,
-   "ema200": 82.4,
+   "last_bar_utc": "2026-11-27T04:00+00:00",
+   "close": 73.29,
+   "ema200": 82.31,
    "ema200_rising": false,
-   "adx": 12.8,
+   "adx": 13.2,
    "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)"
   }
  },
