@@ -9,17 +9,17 @@
  "halted": null,
  "books": {
   "BTCUSDT": {
-   "last_bar": 1795752000000,
+   "last_bar": 1795780800000,
    "position": null,
    "pending": null
   },
   "ETHUSDT": {
-   "last_bar": 1795752000000,
+   "last_bar": 1795780800000,
    "position": null,
    "pending": null
   },
   "SOLUSDT": {
-   "last_bar": 1795752000000,
+   "last_bar": 1795780800000,
    "position": null,
    "pending": null
   }
@@ -126,8 +126,12 @@
   [
    "2026-11-27T10:28+00:00",
    10000.0
+  ],
+  [
+   "2026-11-27T16:20+00:00",
+   10000.0
   ]
  ],
  "alerts": [],
- "last_run_utc": "2026-11-27T10:28+00:00"
+ "last_run_utc": "2026-11-27T16:20+00:00"
 }
