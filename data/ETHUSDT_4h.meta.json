@@ -2,7 +2,7 @@
   "symbol": "ETHUSDT",
   "interval": "4h",
   "source": "Binance spot klines (https://data-api.binance.vision/api/v3/klines)",
-  "fetched_at_utc": "2026-11-27T18:53:50+00:00",
+  "fetched_at_utc": "2026-11-27T19:35:25+00:00",
   "first_bar_utc": "2022-11-27T20:00+00:00",
   "last_bar_utc": "2026-11-27T12:00+00:00",
   "bars": 8765
